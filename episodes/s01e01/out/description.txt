@@ -1,0 +1,16 @@
+[director's note — the owner writes 2–3 lines here before release]
+
+tracklist
+0:00 PLACEHOLDER 1 — rain on the glass
+0:58 PLACEHOLDER 2 — last cut of the night
+1:56 PLACEHOLDER 3 — neon hum
+
+credits
+music — music written and directed by the channel owner, generated with Suno on a paid plan
+key art — PLACEHOLDER drawn in code (not for release)
+motion — built in code (parallax, particles, light flicker)
+mix & render — mixed, mastered and rendered with ffmpeg
+
+season 1 playlist: [season 1 playlist link — set season_playlist_url in config.yaml]
+
+#lofi #soulfullofi #lofihiphop

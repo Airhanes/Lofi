@@ -1,0 +1,32 @@
+{
+  "episode": "s01e01",
+  "crossfade_seconds": 4.0,
+  "expected_duration": 178.0,
+  "mix_duration": 178.0,
+  "tracks": [
+    {
+      "index": 1,
+      "title": "PLACEHOLDER 1 — rain on the glass",
+      "file": "placeholder_01.flac",
+      "hash": "e3f6f1018fa82878a1d7b7acd6a886832851f63f1fe92333b1a97250aaefbcfb",
+      "start": 0.0,
+      "duration": 62.0
+    },
+    {
+      "index": 2,
+      "title": "PLACEHOLDER 2 — last cut of the night",
+      "file": "placeholder_02.flac",
+      "hash": "ffbd02dda75c65cc46480472fc8819ee41421756ae5ff473b9ead022eef38b88",
+      "start": 58.0,
+      "duration": 62.0
+    },
+    {
+      "index": 3,
+      "title": "PLACEHOLDER 3 — neon hum",
+      "file": "placeholder_03.flac",
+      "hash": "4452086d0b24175d72d81b5926705c7b54e7b618dc47df10c55e5f8e2927b88e",
+      "start": 116.0,
+      "duration": 62.0
+    }
+  ]
+}

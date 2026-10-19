@@ -1,0 +1,25 @@
+id: s01e05
+title: crate digging at dusk 🎶 soulful lofi beats [1 hour]
+theme: record shop listening booth at dusk, golden light over the bins
+director_note: ''        # 2–3 lines written by the owner; required for release
+music:
+  bpm: [82, 88]
+  palette: [dusty jazz breaks, vibraphone, upright bass, muted trumpet, vinyl crackle]
+  target_minutes: 60
+  crossfade_seconds: 4
+  credits: ''   # blank = config.yaml credits.music (say so if a human producer made a beat)
+  tracklist: []          # filled by `lofi scan`; owner sets the order
+  approved: false        # owner only
+art:
+  scene_prompt: inside a small independent record shop at dusk, a listening booth with headphones on a hook, golden low sun slanting over wooden crates of records, hand-lettered genre dividers without readable text, a turntable on the counter
+  loop_seconds: 12
+  motion: [sunbeam_dust, lamp_flicker, record]   # code-built layers: rain neon_flicker lamp_flicker tv_flicker steam dust sunbeam_dust fireflies record
+  anchors: {}   # optional, for owner art: window [x0,y0,x1,y1], lamp [x,y], record [x,y,r], steam [x,y] in 0–1 coords
+  realistic: null   # owner: true if imagery looks photoreal (sets YouTube's altered/synthetic flag); null = infer from tools
+  approved: false        # owner only
+thumbnail:               # 2–4 words each, readable at phone size
+  text_a: crate digging
+  text_b: dusk at the shop
+overlays:
+  now_playing: true      # per-track lower-third
+  visualizer: false      # subtle audio-reactive element

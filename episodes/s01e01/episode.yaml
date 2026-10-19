@@ -1,0 +1,37 @@
+id: s01e01
+title: after hours at the barbershop 💈 soulful lofi beats [1 hour]
+theme: barbershop after closing, rain on the glass, soft neon glow
+director_note: ''        # 2–3 lines written by the owner; required for release
+music:
+  bpm: [74, 80]
+  palette: [jazz piano, muted trumpet, brushed drums, upright bass, vinyl crackle]
+  target_minutes: 60
+  crossfade_seconds: 4
+  credits: ''   # blank = config.yaml credits.music (say so if a human producer made a beat)
+  tracklist:              # filled by `lofi scan`; owner sets the order (move whole entries)
+    - file: placeholder_01.flac
+      title: PLACEHOLDER 1 — rain on the glass
+      duration: 62.0
+      hash: e3f6f1018fa82878a1d7b7acd6a886832851f63f1fe92333b1a97250aaefbcfb
+    - file: placeholder_02.flac
+      title: PLACEHOLDER 2 — last cut of the night
+      duration: 62.0
+      hash: ffbd02dda75c65cc46480472fc8819ee41421756ae5ff473b9ead022eef38b88
+    - file: placeholder_03.flac
+      title: PLACEHOLDER 3 — neon hum
+      duration: 62.0
+      hash: 4452086d0b24175d72d81b5926705c7b54e7b618dc47df10c55e5f8e2927b88e
+  approved: false        # owner only
+art:
+  scene_prompt: interior of a neighborhood barbershop after closing time at night, two vintage barber chairs, clippers resting on a folded white towel on the counter, combs in blue barbicide, a wall mirror reflecting the room, rain streaking the front window, the soft pink-and-teal glow of a neon sign outside the glass, warm counter lamp
+  loop_seconds: 12
+  motion: [rain, neon_flicker, dust, record]   # code-built layers: rain neon_flicker lamp_flicker tv_flicker steam dust sunbeam_dust fireflies record
+  anchors: {}   # optional, for owner art: window [x0,y0,x1,y1], lamp [x,y], record [x,y,r], steam [x,y] in 0–1 coords
+  realistic: null   # owner: true if imagery looks photoreal (sets YouTube's altered/synthetic flag); null = infer from tools
+  approved: false        # owner only
+thumbnail:               # 2–4 words each, readable at phone size
+  text_a: after hours
+  text_b: barbershop after dark
+overlays:
+  now_playing: true      # per-track lower-third
+  visualizer: false      # subtle audio-reactive element

@@ -1,0 +1,58 @@
+# Channel-wide defaults. Episode-specific settings live in episodes/<id>/episode.yaml.
+
+channel_name: CHANNEL_NAME          # owner picks; ideas to check: Porch Light Radio, After Hours Soul
+host: null                          # owner picks "A" or "B" — see brand/host.md (art prompts include the host once set)
+title_template: "{title_stem} soulful lofi beats [1 hour]"
+season_playlist_url: ""             # Season 1 playlist link, pasted into every description
+
+credits:
+  music: "music written and directed by the channel owner, generated with Suno on a paid plan"
+  mix: "mixed, mastered and rendered with ffmpeg"
+
+hashtags: ["#lofi", "#soulfullofi", "#lofihiphop"]   # YouTube shows at most 3
+tags:
+  - lofi
+  - soulful lofi
+  - lofi hip hop
+  - soul lofi
+  - jazzy lofi
+  - neo soul instrumental
+  - rhodes lofi
+  - study beats
+  - chill beats
+  - lofi mix 1 hour
+category_id: "10"                   # Music
+
+video:
+  width: 1920
+  height: 1080
+  fps: 30
+  bitrate: 10M
+  maxrate: 12M
+  bufsize: 20M
+  preset: medium                    # x264 preset for the overlay path and loops
+  gop_seconds: 2                    # keyframe every 2 s so episodes can be stream-copied to a live stream
+audio:
+  sample_rate: 48000
+  bitrate: 384k
+
+mix:
+  target_lufs: -14.0
+  loudnorm_true_peak: -1.5          # aim 0.5 dB under the −1 dBTP limit so AAC encoding can't push peaks over
+  qa_true_peak_max: -1.0
+  qa_lufs_tolerance: 1.0
+
+overlays:
+  lower_third_seconds: 10           # how long the now-playing card stays up at the start of each track
+
+art:
+  generator: auto                   # auto | google | owner — auto uses Google only if credentials are configured
+  image_model: imagen-4.0-generate-001
+  video_model: veo-3.0-generate-001
+
+short:
+  seconds: 40                       # 30–45
+
+fonts:                              # resolved via fontconfig; drop OFL fonts into brand/fonts/ to override
+  display: "Inter Display:bold"
+  body: "Inter:medium"

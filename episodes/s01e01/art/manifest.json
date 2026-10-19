@@ -1,0 +1,54 @@
+{
+  "source": "placeholder",
+  "tools": [
+    "key art: PLACEHOLDER drawn in code (not for release)",
+    "motion: built in code (parallax, particles, light flicker)"
+  ],
+  "realistic_hint": false,
+  "anchors": {
+    "window": [
+      0.07,
+      0.1,
+      0.43,
+      0.6
+    ],
+    "lamp": [
+      0.8,
+      0.3
+    ],
+    "record": [
+      0.62,
+      0.79,
+      0.058
+    ],
+    "steam": [
+      0.335,
+      0.705
+    ],
+    "neon": [
+      0.25,
+      0.16
+    ],
+    "tv": [
+      0.0,
+      0.55
+    ]
+  },
+  "key_sha": "a29da554b3f8a5768c3b7e1e0e266ff9fdd88305b99d8c38edbfbd6312b4e461",
+  "has_depth": true,
+  "has_clip": false,
+  "clip": null,
+  "loop": {
+    "route": "code",
+    "layers": [
+      "dust",
+      "grain",
+      "neon_flicker",
+      "parallax",
+      "rain",
+      "record"
+    ],
+    "seconds": 12.0,
+    "seamless": "periodic by construction"
+  }
+}

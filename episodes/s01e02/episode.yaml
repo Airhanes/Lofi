@@ -1,0 +1,25 @@
+id: s01e02
+title: finals week at the hbcu library 📚 soulful lofi beats [1 hour]
+theme: late-night library stacks during finals week, green desk lamp, campus quad through the window
+director_note: ''        # 2–3 lines written by the owner; required for release
+music:
+  bpm: [80, 86]
+  palette: [mellow rhodes, boom-bap drums, upright bass, vinyl crackle, tape warmth]
+  target_minutes: 60
+  crossfade_seconds: 4
+  credits: ''   # blank = config.yaml credits.music (say so if a human producer made a beat)
+  tracklist: []          # filled by `lofi scan`; owner sets the order
+  approved: false        # owner only
+art:
+  scene_prompt: late-night study corner in the stacks of an HBCU library during finals week, a green banker's desk lamp over open textbooks and a composition notebook, tall wooden shelves, a tall window looking out over the campus quad with old brick buildings and lamp posts at night
+  loop_seconds: 12
+  motion: [lamp_flicker, dust, record]   # code-built layers: rain neon_flicker lamp_flicker tv_flicker steam dust sunbeam_dust fireflies record
+  anchors: {}   # optional, for owner art: window [x0,y0,x1,y1], lamp [x,y], record [x,y,r], steam [x,y] in 0–1 coords
+  realistic: null   # owner: true if imagery looks photoreal (sets YouTube's altered/synthetic flag); null = infer from tools
+  approved: false        # owner only
+thumbnail:               # 2–4 words each, readable at phone size
+  text_a: finals week
+  text_b: library after midnight
+overlays:
+  now_playing: true      # per-track lower-third
+  visualizer: false      # subtle audio-reactive element

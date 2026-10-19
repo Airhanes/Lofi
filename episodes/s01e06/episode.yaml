@@ -1,0 +1,25 @@
+id: s01e06
+title: late night braid session ✨ soulful lofi beats [1 hour]
+theme: late night braid session in the kitchen, TV glow, rat-tail comb and edge brush on the table
+director_note: ''        # 2–3 lines written by the owner; required for release
+music:
+  bpm: [72, 78]
+  palette: [neo-soul keys, soft sub bass, swung drums, wordless soul vocal textures, vinyl crackle]
+  target_minutes: 60
+  crossfade_seconds: 4
+  credits: ''   # blank = config.yaml credits.music (say so if a human producer made a beat)
+  tracklist: []          # filled by `lofi scan`; owner sets the order
+  approved: false        # owner only
+art:
+  scene_prompt: a kitchen late at night set up for a braid session, a kitchen chair with a cushion, the flicker of a TV glowing from the next room, a rat-tail comb, an edge brush, hair ties and a jar of hair butter on the table, a mug of tea
+  loop_seconds: 12
+  motion: [tv_flicker, steam, dust, record]   # code-built layers: rain neon_flicker lamp_flicker tv_flicker steam dust sunbeam_dust fireflies record
+  anchors: {}   # optional, for owner art: window [x0,y0,x1,y1], lamp [x,y], record [x,y,r], steam [x,y] in 0–1 coords
+  realistic: null   # owner: true if imagery looks photoreal (sets YouTube's altered/synthetic flag); null = infer from tools
+  approved: false        # owner only
+thumbnail:               # 2–4 words each, readable at phone size
+  text_a: braid session
+  text_b: late night in the kitchen
+overlays:
+  now_playing: true      # per-track lower-third
+  visualizer: false      # subtle audio-reactive element
