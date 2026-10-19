@@ -34,10 +34,11 @@ def _fit(draw: ImageDraw.ImageDraw, lines: list[str], max_w: int, start: int) ->
 
 
 def _lines(text: str) -> list[str]:
+    """One line for 1–2 words; otherwise the two-line break with the most even line lengths."""
     words = text.split()
     if len(words) <= 2:
         return [text]
-    cut = (len(words) + 1) // 2
+    cut = min(range(1, len(words)), key=lambda i: abs(len(" ".join(words[:i])) - len(" ".join(words[i:]))))
     return [" ".join(words[:cut]), " ".join(words[cut:])]
 
 

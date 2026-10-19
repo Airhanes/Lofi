@@ -1,0 +1,18 @@
+# /etc/systemd/system/lofi-stream.service — on a small cloud VM with the repo at /opt/lofi
+[Unit]
+Description=lofi 24/7 YouTube stream
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=lofi
+WorkingDirectory=/opt/lofi/stream
+# /etc/lofi/stream.env holds STREAM_KEY=... (chmod 600, owned by root)
+EnvironmentFile=/etc/lofi/stream.env
+ExecStart=/opt/lofi/stream/stream.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

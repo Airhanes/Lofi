@@ -44,8 +44,9 @@ def run(ep_id: str, *, log=print) -> str:
     v = core.config().get("video", {})
     fps = int(v.get("fps", 30))
     steps = [
-        "scale=-2:1920",
-        f"crop=1080:1920:'min(max(iw*{focus}-540,0),iw-1080)':0",
+        # crop a 9:16 window from the 16:9 loop first, then scale — far cheaper than scaling the whole frame
+        f"crop='trunc(ih*9/16/2)*2':ih:'min(max(iw*{focus}-ih*9/32,0),iw-ih*9/16)':0",
+        "scale=1080:1920:flags=lanczos,setsar=1",
         f"drawbox=x=0:y=0:w=iw:h=520:color={hexc('indigo', 0.55)}:t=fill",
         f"drawtext=fontfile='{display}':textfile='{_esc(title_file)}':fontsize=96:line_spacing=6:fontcolor={hexc('mustard')}:"
         f"shadowcolor={hexc('indigo', 0.9)}:shadowx=3:shadowy=4:x=(w-text_w)/2:y=170",
